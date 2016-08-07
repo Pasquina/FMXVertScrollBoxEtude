@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7FB2B1EC-F1F5-4D2A-8AF3-926C024461E6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="VertScrollDemo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="VertScrollDemo">
+        <MSBuild Projects="VertScrollDemo.dproj"/>
+    </Target>
+    <Target Name="VertScrollDemo:Clean">
+        <MSBuild Projects="VertScrollDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VertScrollDemo:Make">
+        <MSBuild Projects="VertScrollDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="VertScrollDemo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="VertScrollDemo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="VertScrollDemo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

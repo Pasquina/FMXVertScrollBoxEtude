@@ -1,0 +1,168 @@
+object fVertScrollDemo: TfVertScrollDemo
+  Left = 0
+  Top = 0
+  Caption = 'Vertical Scroll Box Etude'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 372.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object VertScrollBox1: TVertScrollBox
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 372.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnCalcContentBounds = VertScrollBox1CalcContentBounds
+      Viewport.Width = 640.000000000000000000
+      Viewport.Height = 372.000000000000000000
+      object Button1: TButton
+        Position.X = 40.000000000000000000
+        Position.Y = 28.000000000000000000
+        TabOrder = 0
+        Text = 'Button1'
+      end
+      object CheckBox1: TCheckBox
+        Position.X = 48.000000000000000000
+        Position.Y = 87.000000000000000000
+        TabOrder = 1
+        Text = 'CheckBox1'
+      end
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Position.X = 256.000000000000000000
+        Position.Y = 28.000000000000000000
+      end
+      object GroupBox1: TGroupBox
+        Position.X = 48.000000000000000000
+        Position.Y = 152.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'GroupBox1'
+        TabOrder = 3
+        object RadioButton1: TRadioButton
+          Position.X = 16.000000000000000000
+          Position.Y = 24.000000000000000000
+          TabOrder = 0
+          Text = 'RadioButton1'
+        end
+        object RadioButton2: TRadioButton
+          Position.X = 16.000000000000000000
+          Position.Y = 56.000000000000000000
+          TabOrder = 1
+          Text = 'RadioButton2'
+        end
+      end
+    end
+  end
+  object Panel2: TPanel
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 103.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object edVPX: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      KeyboardType = NumberPad
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Viewport X'
+    end
+    object edVPY: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      KeyboardType = NumberPad
+      Position.X = 8.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Viewport Y'
+    end
+    object edBB: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      KeyboardType = NumberPad
+      Position.X = 264.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Bounds Bottom'
+    end
+    object btAV: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Apply Viewport'
+      OnClick = btAVClick
+    end
+    object btSBB: TButton
+      Position.X = 264.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Set Bounds Bottom'
+      OnClick = btSBBClick
+    end
+    object btSH: TButton
+      Position.X = 136.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Show Height'
+      OnClick = btSHClick
+    end
+    object edHT: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      ReadOnly = True
+      Position.X = 136.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Height'
+    end
+    object VKAutoShowEnabled: TCheckBox
+      Position.X = 392.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'VK Auto Show Mode Enabled'
+      OnChange = VKAutoShowEnabledChange
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Top
+    Cursor = crVSplit
+    MinSize = 20.000000000000000000
+    Position.Y = 103.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 5.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
