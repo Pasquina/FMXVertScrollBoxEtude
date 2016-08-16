@@ -1,0 +1,39 @@
+inherited fScrollDemo_LgXhdpiTb: TfScrollDemo_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 0
+  inherited Panel1: TPanel
+    Size.Width = 480.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited ScrollBox1: TScrollBox
+      Size.Width = 480.000000000000000000
+      Size.Height = 695.000000000000000000
+      Viewport.Width = 480.000000000000000000
+      Viewport.Height = 695.000000000000000000
+    end
+  end
+  inherited Panel2: TPanel
+    Size.Width = 480.000000000000000000
+    inherited edVPX: TEdit
+      Size.Height = 32.000000000000000000
+    end
+    inherited edVPY: TEdit
+      Size.Height = 32.000000000000000000
+    end
+    inherited edBB: TEdit
+      Size.Height = 32.000000000000000000
+    end
+    inherited edHT: TEdit
+      Size.Height = 32.000000000000000000
+    end
+    inherited edWD: TEdit
+      Size.Height = 32.000000000000000000
+    end
+    inherited edBR: TEdit
+      Size.Height = 32.000000000000000000
+    end
+  end
+  inherited Splitter1: TSplitter
+    Size.Width = 480.000000000000000000
+  end
+end

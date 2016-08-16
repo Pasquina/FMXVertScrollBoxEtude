@@ -1,0 +1,69 @@
+inherited fVertScrollDemo_LgXhdpiTb: TfVertScrollDemo_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 0
+  inherited Panel1: TPanel
+    Size.Width = 480.000000000000000000
+    Size.Height = 623.000000000000000000
+    inherited ScrollBox1: TScrollBox
+      Size.Width = 480.000000000000000000
+      Size.Height = 623.000000000000000000
+      Viewport.Width = 480.000000000000000000
+      Viewport.Height = 623.000000000000000000
+    end
+  end
+  inherited Panel2: TPanel
+    Size.Width = 480.000000000000000000
+    Size.Height = 201.000000000000000000
+    inherited edVPX: TEdit
+      Position.Y = 80.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 32.000000000000000000
+    end
+    inherited edVPY: TEdit
+      Position.Y = 112.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 32.000000000000000000
+    end
+    inherited edBB: TEdit
+      ReturnKeyType = Next
+      Position.X = 320.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 32.000000000000000000
+    end
+    inherited btAV: TButton
+      Size.Width = 150.000000000000000000
+      Size.Height = 60.000000000000000000
+    end
+    inherited btSBB: TButton
+      Position.X = 320.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 60.000000000000000000
+    end
+    inherited btSH: TButton
+      Position.X = 164.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 60.000000000000000000
+    end
+    inherited edHT: TEdit
+      KeyboardType = NumberPad
+      Position.X = 168.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 32.000000000000000000
+    end
+    inherited VKAutoShowEnabled: TCheckBox
+      Position.X = 168.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 249.000000000000000000
+    end
+    inherited edWD: TEdit
+      Size.Height = 32.000000000000000000
+    end
+  end
+  inherited Splitter1: TSplitter
+    Position.Y = 201.000000000000000000
+    Size.Width = 480.000000000000000000
+  end
+end

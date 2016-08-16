@@ -1,0 +1,59 @@
+inherited fVKLogger_XLgXhdpiTb: TfVKLogger_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 3
+  inherited Label1: TLabel
+    Size.Width = 770.000000000000000000
+    inherited cbAlwaysShow: TCheckBox
+      Position.X = 650.000000000000000000
+    end
+  end
+  inherited VSBox: TVertScrollBox
+    Size.Width = 800.000000000000000000
+    Size.Height = 1217.000000000000000000
+    Viewport.Width = 800.000000000000000000
+    Viewport.Height = 1217.000000000000000000
+    inherited GPLEditBoxes: TGridPanelLayout
+      Position.Y = 944.000000000000000000
+      Size.Width = 770.000000000000000000
+      inherited Edit1: TEdit
+        Size.Width = 365.000000000000000000
+      end
+      inherited Edit2: TEdit
+        Position.X = 395.000000000000000000
+        Size.Width = 365.000000000000000000
+      end
+      inherited Edit3: TEdit
+        Size.Width = 365.000000000000000000
+      end
+      inherited Edit4: TEdit
+        Position.X = 395.000000000000000000
+        Size.Width = 365.000000000000000000
+      end
+      inherited Edit5: TEdit
+        Size.Width = 365.000000000000000000
+      end
+      inherited Edit6: TEdit
+        Position.X = 395.000000000000000000
+        Size.Width = 365.000000000000000000
+      end
+      inherited Edit7: TEdit
+        Size.Width = 365.000000000000000000
+      end
+      inherited Edit8: TEdit
+        Position.X = 395.000000000000000000
+        Size.Width = 365.000000000000000000
+      end
+    end
+    inherited mVKLog: TMemo
+      Size.Width = 780.000000000000000000
+      Size.Height = 919.000000000000000000
+      Viewport.Width = 772.000000000000000000
+      Viewport.Height = 911.000000000000000000
+    end
+    inherited btFinal: TButton
+      Position.Y = 1163.000000000000000000
+      Size.Width = 770.000000000000000000
+    end
+  end
+end

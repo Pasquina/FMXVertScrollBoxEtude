@@ -1,0 +1,292 @@
+object fVKLogger: TfVKLogger
+  Left = 0
+  Top = 0
+  Caption = 'Virtual Keyboard Logger'
+  ClientHeight = 722
+  ClientWidth = 341
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnFocusChanged = FormFocusChanged
+  OnVirtualKeyboardShown = FormVirtualKeyboardShown
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMasterStyle = 3
+  object mVKLog: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 386.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 313.000000000000000000
+    Viewport.Height = 378.000000000000000000
+  end
+  object Label1: TLabel
+    Align = MostTop
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 15.000000000000000000
+    Size.Width = 311.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Virtual Keyboard Log'
+    object cbAlwaysShow: TCheckBox
+      Align = Right
+      Position.X = 191.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Always Show'
+      OnChange = cbAlwaysShowChange
+    end
+  end
+  object GPLEditBoxes: TGridPanelLayout
+    Align = Bottom
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 449.000000000000000000
+    Size.Width = 311.000000000000000000
+    Size.Height = 209.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = Edit1
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = Edit2
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = Edit3
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = Edit4
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = Edit5
+        Row = 2
+      end
+      item
+        Column = 1
+        Control = Edit6
+        Row = 2
+      end
+      item
+        Column = 0
+        Control = Edit7
+        Row = 3
+      end
+      item
+        Column = 1
+        Control = Edit8
+        Row = 3
+      end>
+    RowCollection = <
+      item
+        SizeStyle = Auto
+        Value = 100.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+        Value = 50.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+      end
+      item
+        SizeStyle = Auto
+      end
+      item
+        SizeStyle = Auto
+      end
+      item
+        SizeStyle = Auto
+      end
+      item
+        SizeStyle = Auto
+      end
+      item
+        SizeStyle = Auto
+      end>
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = VertCenter
+      TabOrder = 0
+      ReturnKeyType = Next
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 135.500000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Default'
+      CheckSpelling = True
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = VertCenter
+      TabOrder = 1
+      KeyboardType = Alphabet
+      ReturnKeyType = Next
+      Position.X = 165.500000000000000000
+      Position.Y = 10.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 135.500000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Alphabet'
+    end
+    object Edit3: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = VertCenter
+      TabOrder = 2
+      KeyboardType = EmailAddress
+      ReturnKeyType = Next
+      Position.X = 10.000000000000000000
+      Position.Y = 62.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 135.500000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Email Addr'
+    end
+    object Edit4: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = VertCenter
+      TabOrder = 3
+      KeyboardType = NamePhonePad
+      ReturnKeyType = Next
+      Position.X = 165.500000000000000000
+      Position.Y = 62.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 135.500000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Name Phone Pad'
+    end
+    object Edit5: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = VertCenter
+      TabOrder = 4
+      KeyboardType = NumberPad
+      ReturnKeyType = Next
+      Position.X = 10.000000000000000000
+      Position.Y = 114.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 135.500000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Number Pad'
+    end
+    object Edit6: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = VertCenter
+      TabOrder = 5
+      KeyboardType = NumbersAndPunctuation
+      ReturnKeyType = Next
+      Position.X = 165.500000000000000000
+      Position.Y = 114.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 135.500000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Number Punc'
+    end
+    object Edit7: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = VertCenter
+      TabOrder = 6
+      KeyboardType = PhonePad
+      ReturnKeyType = Next
+      Position.X = 10.000000000000000000
+      Position.Y = 166.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 135.500000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Phone Pad'
+    end
+    object Edit8: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = VertCenter
+      TabOrder = 7
+      KeyboardType = URL
+      ReturnKeyType = Done
+      Position.X = 165.500000000000000000
+      Position.Y = 166.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 135.500000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'URL'
+    end
+  end
+  object btFinal: TButton
+    Align = MostBottom
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 668.000000000000000000
+    Size.Width = 311.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Some Button'
+  end
+end

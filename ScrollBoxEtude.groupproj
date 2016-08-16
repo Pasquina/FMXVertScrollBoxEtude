@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7FB2B1EC-F1F5-4D2A-8AF3-926C024461E6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ScrollDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VKLogger.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VKScrollDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VyDVSBFMXScroll.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ScrollDemo">
+        <MSBuild Projects="ScrollDemo.dproj"/>
+    </Target>
+    <Target Name="ScrollDemo:Clean">
+        <MSBuild Projects="ScrollDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ScrollDemo:Make">
+        <MSBuild Projects="ScrollDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VKLogger">
+        <MSBuild Projects="VKLogger.dproj"/>
+    </Target>
+    <Target Name="VKLogger:Clean">
+        <MSBuild Projects="VKLogger.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VKLogger:Make">
+        <MSBuild Projects="VKLogger.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VKScrollDemo">
+        <MSBuild Projects="VKScrollDemo.dproj"/>
+    </Target>
+    <Target Name="VKScrollDemo:Clean">
+        <MSBuild Projects="VKScrollDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VKScrollDemo:Make">
+        <MSBuild Projects="VKScrollDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VyDVSBFMXScroll">
+        <MSBuild Projects="VyDVSBFMXScroll.dproj"/>
+    </Target>
+    <Target Name="VyDVSBFMXScroll:Clean">
+        <MSBuild Projects="VyDVSBFMXScroll.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VyDVSBFMXScroll:Make">
+        <MSBuild Projects="VyDVSBFMXScroll.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ScrollDemo;VKLogger;VKScrollDemo;VyDVSBFMXScroll"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ScrollDemo:Clean;VKLogger:Clean;VKScrollDemo:Clean;VyDVSBFMXScroll:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ScrollDemo:Make;VKLogger:Make;VKScrollDemo:Make;VyDVSBFMXScroll:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
