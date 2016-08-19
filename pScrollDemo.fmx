@@ -1,7 +1,7 @@
 object fScrollDemo: TfScrollDemo
   Left = 0
   Top = 0
-  Caption = 'Scroll Box Etude'
+  Caption = 'Scroll Box Etude: Scroll Demo'
   ClientHeight = 572
   ClientWidth = 651
   FormFactor.Width = 320

@@ -298,7 +298,7 @@ procedure TfScrollDemo.ScrollBox1CalcContentBounds(
   var ContentBounds: TRectF);
 begin
   Beep;                                                      // to let the user know this routine was entered
-  if cbForceCB.IsChecked then
+  if cbForceCB.IsChecked then                                // change bounds only if force change is checked
   begin
     ContentBounds.Bottom := BB;                              // cause Bound Bottom value to change
     ContentBounds.Right := BR;                               // cause Bound Right value to change

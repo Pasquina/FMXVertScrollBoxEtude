@@ -104,7 +104,10 @@ procedure TVyDVSBHelper.CalcContentBounds(
   Sender: TObject;
   var ContentBounds: TRectF);
 begin
-  ContentBounds.Bottom := FormOwner.ClientHeight + ShiftAmtRequired; // make sure there's enough space
+  if ShiftAmtRequired > 0 then                                    // if no shift do not override Content Bounds
+  begin
+    ContentBounds.Bottom := VScrollBox.Height + ShiftAmtRequired; // make sure there's enough space
+  end;
 end;
 
 { The constructor saves a pointer to the form. Additionally, create sets event method

@@ -187,7 +187,7 @@ object fVKLogger: TfVKLogger
       Size.Width = 135.500000000000000000
       Size.Height = 32.000000000000000000
       Size.PlatformDefault = False
-      TextPrompt = 'Email Addr'
+      TextPrompt = 'Email Address'
     end
     object Edit4: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
@@ -238,7 +238,7 @@ object fVKLogger: TfVKLogger
       Size.Width = 135.500000000000000000
       Size.Height = 32.000000000000000000
       Size.PlatformDefault = False
-      TextPrompt = 'Number Punc'
+      TextPrompt = 'Numbers and Punctuation'
     end
     object Edit7: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
