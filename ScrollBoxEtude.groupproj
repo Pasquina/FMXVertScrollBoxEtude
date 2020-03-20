@@ -69,4 +69,30 @@
         <CallTarget Targets="ScrollDemo:Make;VKLogger:Make;VKScrollDemo:Make;VyDVSBFMXScroll:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+    <ItemGroup Condition="'$(BuildGroup)'=='Production'">
+        <BuildGroupProject Include="VKLogger.dproj">
+            <ProjectGuid>{E6162440-BC51-4FF2-8304-8F3D7D0A16FC}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="VKScrollDemo.dproj">
+            <ProjectGuid>{94DB8A3E-21B2-445B-986A-044F8445094D}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="ScrollDemo.dproj">
+            <ProjectGuid>{290C3E32-7E3F-429A-8709-7C0AF3930979}</ProjectGuid>
+            <Configurations>Debug</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>False</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="VyDVSBFMXScroll.dproj">
+            <ProjectGuid>{D102D62B-98C7-4490-B312-77AA791D3227}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Android;Android64;Win32;Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+    </ItemGroup>
 </Project>

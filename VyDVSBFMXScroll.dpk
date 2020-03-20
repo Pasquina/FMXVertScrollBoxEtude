@@ -27,7 +27,7 @@ package VyDVSBFMXScroll;
 {$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'Vertical Scroll Box helper component'}
 {$LIBPREFIX 'dcl'}
-{$LIBSUFFIX '260'}
+{$LIBSUFFIX '240'}
 {$IMPLICITBUILD OFF}
 
 requires
